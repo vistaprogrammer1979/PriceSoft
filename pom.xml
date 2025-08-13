@@ -1,0 +1,464 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.accumed.pricing</groupId>
+    <artifactId>AccumedPricing</artifactId>
+    <packaging>war</packaging>
+    <version>2.0.0.96</version>
+    <description><![CDATA[AccumedPricing, Pricing Engine, is a SOAP service which provides the pricing for claims. Prices are calculated based on LIST prices stored in the database and a set of predefined rules which abide insurers and facilities regulations. Additionally, the service takes into consideration patient share details such as the deductible and copayment, hence providing a complete tariff for each claim line consequently for the whole claim.&#xD;&#xA;
+Performance, was a key issue when designing and building Santechture Pricing Engine, because of that a lot of performance enhancement mechanisms were adopted like data caching, object pooling (Accountant), data change periodic monitoring and hot rules adapting.]]>
+    </description>
+    
+    <issueManagement>
+        <system>jira</system>
+        <url>http://jira.accumed.ae:9001/browse/PRICE</url>
+    </issueManagement>
+    
+    <name>Santechture UAE Pricing Engine</name>
+    <url>http://maven.apache.org</url>
+    <licenses>
+        <license>
+            <name>License Name</name>
+            <url>License URL</url>
+            <distribution>repo</distribution>
+            <comments>License comment</comments>
+        </license>
+    </licenses>
+    <organization>
+        <name>ACCUMED</name>
+        <url>http://accumed.ae/</url>
+    </organization>
+    <developers>
+        <developer>
+            <id>smutlak</id>
+            <name>Sameer Mutlak</name>
+            <email>smutlak@accumed.ae</email>
+            <url>https://www.linkedin.com/in/sameermutlak</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Software Solutions Architect</role>
+                <role>Senior Software Engineer</role>
+                <role>Software Developer</role>
+            </roles>
+            <timezone>America/Denver</timezone>
+            <!-- <properties>
+                <picUrl>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/7/005/0b1/084/2bbd4b6.jpg</picUrl>
+            </properties>-->
+        </developer>
+         
+        
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Anas Batikhi</name>
+            <email>abatikhi@accumed.ae</email>
+            <url>https://www.linkedin.com/in/aghiad-black-2a1490103</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Head -  Business Management, Business Management</role>
+            </roles>
+            <timezone>Asia/Dubai</timezone>
+            <!--<properties>
+                <picUrl>https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAARLAAAAJGMxNWI0MjIyLTU0NjItNDg0OS04YzE4LTY0MmVjZDJmZmIwZQ.jpg</picUrl>
+            </properties>-->
+        </contributor>
+        <contributor>
+            <name>Aghiad Black</name>
+            <email>ablack@accumed.ae</email>
+            <url>https://www.linkedin.com/in/aghiad-black-2a1490103</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Software tester</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+            <!--<properties>
+                <picUrl>https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAARLAAAAJGMxNWI0MjIyLTU0NjItNDg0OS04YzE4LTY0MmVjZDJmZmIwZQ.jpg</picUrl>
+            </properties>-->
+        </contributor>
+       
+        <contributor>
+            <name>Ahmad Bakdones</name>
+            <email>abakdones@accumed.ae</email>
+            <url> https://www.linkedin.com/in/ahmad-bakdonues-9bb7a43b </url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles> 
+                <role>Software Developer</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+            <!--<properties>
+                <picUrl> https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAXTAAAAJGY4MWQzZjY3LWJhNzQtNGRmMS04MDFjLTU1ZWU5MzMzZTAxNA.jpg </picUrl>
+            </properties>-->
+        </contributor>
+        
+        <contributor>
+            <name>Waleed Altasseh</name>
+            <email>waltasseh@accumed.ae</email>
+            <url>https://www.linkedin.com/in/waleed-tassah-664aa373</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Senior Software Developer</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+            <!--<properties>
+            </properties>-->
+        </contributor>
+
+        <contributor>
+            <name>Wael Fakhra</name>
+            <email> wfakhra@accumed.ae</email>
+            <url> https://www.linkedin.com/in/wael-fakhra-14146a63</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Web Developer</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+            <!--<properties>
+                <picUrl> https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/1e8/3ac/3685dfe.jpg </picUrl>
+            </properties>-->
+        </contributor>
+
+        <contributor>
+            <name>Zahraa Knass</name>
+            <email>zknass@accumed.ae</email>
+            <url>https://www.linkedin.com/in/zahraa-knass</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Rules Author</role>
+                <role>Software Developer</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+          
+        </contributor>
+        
+        <contributor>
+            
+            <name>Rasha Al KAyal</name>
+            <email> RKayal@accumed.ae </email>
+            <url> https://www.linkedin.com/in/rashakayal</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Rules Author</role>
+                <role>Software Developer</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+        </contributor>
+
+        <contributor>
+            
+            <name>Ahmad Al Massri</name>
+            <email>aalmassri@accumed.ae</email>
+            <url>https://www.linkedin.com/in/ahmad-al-massri</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Manager - IT Solutions and Delivery</role>
+            </roles>
+            <timezone>Asia/Damascus</timezone>
+            <!--<properties>
+                <picUrl> https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/04a/1ca/1de5c68.jpg</picUrl>
+            </properties>-->
+        </contributor>
+        
+        <contributor>
+            <name>Ammad Zafeer</name>
+            <email>AZafeer@accumed.ae</email>
+            <url>https://www.linkedin.com/in/ayman-youssef-12871010 </url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Assistant Manager - IT Services Delivery, Information Technology</role>
+            </roles>
+            <timezone>Asia/Dubai</timezone>
+            <!--<properties>
+                <picUrl>https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/290/146/05fbd02.jpg </picUrl>
+            </properties>-->
+        </contributor>
+        <contributor>
+            <name>Anas Batikhi</name>
+            <email>abatikhi@accumed.ae</email>
+            <url>https://www.linkedin.com/in/aghiad-black-2a1490103</url>
+            <organization>ACCUMED</organization>
+            <organizationUrl>http://www.accumed.ae</organizationUrl>
+            <roles>
+                <role>Head -  Business Management, Business Management</role>
+            </roles>
+            <timezone>Asia/Dubai</timezone>
+            <!--<properties>
+                <picUrl>https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAARLAAAAJGMxNWI0MjIyLTU0NjItNDg0OS04YzE4LTY0MmVjZDJmZmIwZQ.jpg</picUrl>
+            </properties>-->
+        </contributor>
+    </contributors>
+    
+    <scm>
+        <url>https://svn.accumed.ae:9000/tags/AccumedPricing-2.0.0.50</url>
+        <connection>scm:svn:https://svn.accumed.ae:9000/svn/Accumed2/Pricing/Projects/AccumedPricing/tags/AccumedPricing-2.0.0.50</connection>
+        <developerConnection>scm:svn:https://svn.accumed.ae:9000/svn/Accumed2/Pricing/Projects/AccumedPricing/tags/AccumedPricing-2.0.0.50</developerConnection>
+    </scm>
+  
+    <!--    <repositories>
+        <repository>
+            <id>accumedSY.releases</id>
+            <name>Internal Release Repository</name>
+            <url>http://DB-server2:8060/repository/AccumedReleases/</url>
+        </repository>
+        <repository>
+            <id>accumedSY.snapshots</id>
+            <name>Internal Snapshot Repository</name>
+            <url>http://DB-server2:8060/repository/snapshots/</url>
+        </repository>
+    
+    </repositories>-->
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.metro</groupId>
+            <artifactId>webservices-rt</artifactId>
+            <version>2.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.faces</groupId>
+                    <artifactId>jsf-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.enterprise</groupId>
+                    <artifactId>cdi-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>org.eclipse.persistence.jpa</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.0.0.GA</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>5.5.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-compiler</artifactId>
+            <version>5.5.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>knowledge-api</artifactId>
+            <version>5.5.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.accumed.pricing</groupId>
+            <artifactId>AccumedPricingModel</artifactId>
+            <version>2.0.0.77</version>
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.efsavage.jquery</groupId>
+            <artifactId>jquery-maven</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        <dependency>
+    <groupId>javax.enterprise</groupId>
+    <artifactId>cdi-api</artifactId>
+    <version>1.2</version>
+    <scope>provided</scope>
+</dependency>
+        <!--        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.2</version>
+            <scope>provided</scope>
+        </dependency>-->
+
+        <!--        <dependency>
+            <groupId>net.sourceforge.jtds</groupId>
+            <artifactId>jtds</artifactId>
+            <version>1.3.1</version>
+        </dependency>-->
+        
+        <dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>2.1.7</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.8.1.jre8</version>
+        </dependency>
+
+        <!--        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.5</version>   Use the latest version if available 
+        </dependency>-->
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-replacer-plugin</groupId>
+                <artifactId>maven-replacer-plugin</artifactId>
+                <version>1.3.2</version>
+                <executions>
+                    <execution>
+                        <!-- the replace should happen before the app is packaged -->
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <includes>
+                        <!-- replace the token in this file -->
+                        <include>src\main\webapp\version.jsp</include>
+                    </includes>
+                    <regex>true</regex>
+                    <!-- the name of the token to replace -->
+                    <token>version:\[(.*?)\]</token>
+                    <!-- replace it with the maven project version -->
+                    <value>version:[${project.version}]</value>
+                </configuration>
+            </plugin>
+            
+        </plugins>
+    </build>
+    
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.9</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <!-- <configuration>                                                              
+                    <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>                         
+                    <docletArtifact>                                                         
+                        <groupId>org.umlgraph</groupId>                                      
+                        <artifactId>umlgraph</artifactId>                                    
+                        <version>5.6</version>                                               
+                    </docletArtifact>                                                        
+                    <additionalparam>-views -all</additionalparam>                           
+                    <useStandardDocletOptions>true</useStandardDocletOptions>                
+                </configuration> -->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.5.1</version>
+            </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changes-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <jiraUser>smutlak</jiraUser>
+                    <jiraPassword>P@ssw0rd</jiraPassword>
+                    <webUser>smutlak</webUser>
+                    <webPassword>P@ssw0rd</webPassword>
+                </configuration>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.2</version>
+                <reportSets>
+                    <reportSet>
+                        <id>PDF</id>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                        <configuration>
+                            <name>PDF</name>
+                            <description>This is my Documentation on PDF.</description>
+                            <destDir>pdf</destDir>
+                            <doclet>com.tarsec.javadoc.pdfdoclet.PDFDoclet</doclet>
+                            <docletPath>C:/Work2/pdfdoclet-1.0.3-all.jar</docletPath>
+                            <useStandardDocletOptions>false</useStandardDocletOptions>
+                            <additionalparam>
+                                -pdf javadoc.pdf
+                            </additionalparam>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <aggregate>true</aggregate>
+                    <show>private</show>
+                    <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+                    <docletArtifact>
+                        <groupId>org.umlgraph</groupId>
+                        <artifactId>umlgraph</artifactId>
+                        <version>5.6.6</version>
+                    </docletArtifact>
+                </configuration>
+            </plugin>
+            
+        </plugins>
+    </reporting>
+    
+    <!--    <distributionManagement>
+        <repository>
+            <id>accumedSY.releases</id>
+            <name>Internal Release Repository</name>
+            <url>http://DB-server2:8060/repository/AccumedReleases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>accumedSY.snapshots</id>
+            <name>Internal Snapshot Repository</name>
+            <url>http://DB-server2:8060/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>-->
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+</project>

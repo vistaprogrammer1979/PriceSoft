@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/pricing">
+  <!--<Resource acquireIncrement="5" auth="Container" connectionCustomizerClassName="com.accumed.rules.engine.accumed_c3p0_readuncommited.AccumedC3P0ReadUncommited" description="DB Connection" driverClass="net.sourceforge.jtds.jdbc.Driver" factory="org.apache.naming.factory.BeanFactory" jdbcUrl="jdbc:jtds:sqlserver://localhost:1433/ROBIN_UAE_UAT_DB" maxIdleTime="1800" maxPoolSize="25" minPoolSize="5" name="jdbc/pricingDB" password="ba55el@1979" type="com.mchange.v2.c3p0.ComboPooledDataSource" user="sa"/>-->
+  <ResourceLink global="jdbc/pricingDB" name="jdbc/pricingDB" type="javax.sql.DataSource"/>
+  <ResourceLink global="com.san.accountant_package" name="com.san.accountant_package" type="java.lang.String"/>
+  <ResourceLink global="com.san.rules.engine.reload_period" name="com.san.rules.engine.reload_period" type="java.lang.String"/>
+</Context>
